@@ -9,7 +9,7 @@ $text-color: white;
 }
 
 %titlesIcons {
-  font-size: 2vw;
+  width: 190px;
   font-family: "Montserrat Alternates", sans-serif;
 }
 
@@ -24,7 +24,7 @@ $text-color: white;
 
 %item {
   border: 1px solid rgb(112 169 176);
-  border-radius: 1vw;
+  border-radius: 8px;
   display: grid;
   height: 100%;
   width: 100%;
@@ -57,12 +57,12 @@ body {
     display: grid;
     grid-template-rows: 1fr 2.5fr;
     width: 100%;
-    height: 33vw;
+    height: 600px;
     background-color: rgb(80, 156, 156);
 
     .headerImg {
       margin: 0 auto;
-      width: 32vw;
+      width: 530px;
     }
     .imgCollection {
       position: relative;
@@ -70,29 +70,26 @@ body {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       .character1 {
-        width: 12vw;
-        height: 15vw;
-        margin-left: 6vw;
-        padding-top: 5.5vw;
+        width: 300px;
+        height: 370px;
+        margin-left: 100px;
+        padding-top: 80px;
       }
       .character4 {
-        margin-top: 13vw;
-        position: relative;
-        width: 15vw;
-        height: 16vw;
-        z-index: 2;
+        margin-top: 230px;
+        width: 300px;
+        height: 350px;
       }
       .character2 {
-        margin-left: 5.7vw;
-        margin-top: 1vw;
-        width: 11vw;
-        height: 11vw;
+        margin-left: 100px;
+        width: 200px;
+        height: 200px;
       }
       .character3 {
         transform: rotate(340deg);
-        margin-top: 6.5vw;
-        margin-left: 6vw;
-        width: 15.5vw;
+        margin-top: 70px;
+        margin-left: 50px;
+        width: 320px;
       }
     }
   }
@@ -101,8 +98,8 @@ body {
     display: grid;
     z-index: 2;
     background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 11vw;
+    width: 100%;  
+      height: 290px;
     grid-template-columns: repeat(3, 1fr);
     .childIcon {
       margin-top: 3vw;
@@ -131,9 +128,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 6fr;
     margin: 0 auto;
-    margin-bottom: 2.2vw;
+    margin-bottom: 20px;
     background-color: rgba(155, 192, 180, 0.26);
-    height: 4vw;
+    height: 75px;
     #mainPage:hover {
       color: rgb(69, 69, 190);
     }
@@ -322,12 +319,126 @@ body {
       font-size: 1.4vw;
     }
   }
-  // body
-  // .icons{
-  //   height: 175px;
-  // }
+  body
+  .icons{
+    height: 175px;
+  }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+  body .header {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-rows: 1fr 2.5fr;
+    width: 100%;
+    height: 128vw;
+    background-color: rgb(80, 156, 156);
+
+    .headerImg {
+      margin: 0 auto;
+      width: 69vw;
+    }
+    .imgCollection {
+      position: relative;
+      z-index: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      .headerImg {
+        margin: 0 auto;
+        width: 98vw;
+      }
+      .character1 {
+        width: 31vw;
+        height: 39vw;
+        margin-left: 6vw;
+        padding-top: 10.5vw;
+        margin-top: 10vw;
+      }
+      .character4 {
+        margin-top: 74vw;
+        position: relative;
+        width: 32vw;
+        height: 37vw;
+        z-index: 2;
+      }
+      .character2 {
+        margin-left: -12.299999999999997vw;
+        margin-top: 1vw;
+        width: 27vw;
+        height: 27vw;
+      }
+      .character3 {
+        transform: rotate(340deg);
+        margin-top: 38.5vw;
+        margin-left: -19vw;
+        width: 25.5vw;
+      }
+    }
+  }
+  body .icons {
+    position: relative;
+    display: grid;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 1vw;
+    grid-template-columns: repeat(3, 1fr);
+    .character5 {
+      position: relative;
+      width: 16vw;
+      height: 15vw;
+      margin-left: 7vw;
+    }
+    .childIcon {
+      margin-top: 10vw;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  body .navbar {
+    font-weight: bolder;
+    font-family: "Montserrat Alternates", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 6fr;
+    margin: 0 auto;
+    margin-bottom: 6.199999999999999vw;
+    background-color: rgba(155, 192, 180, 0.26);
+    height: 10vw;
+    .barChild {
+      padding-top: 1vw;
+      border: 0.2vw rgb(94, 122, 131) solid;
+      color: rgba(37, 51, 54, 0.699);
+      cursor: pointer;
+      font-size: 3.3vw;
+      .search {
+        width: 41vw;
+        height: 6.7vw;
+      }
+      .searchButton {
+        height: 7vw;
+        width: 7vw;
+      }
+    }
+  }
+
+  %title {
+    font-size: 2.8vw;
+  }
+  %img {
+    width: 16vw;
+  }
+  %content {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    gap: 20px;
+  }
+  body #content2 .pokemonElement .backgroundImg .starImage {
+    width: 3vw;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
   body .header {
     position: relative;
     z-index: 1;
