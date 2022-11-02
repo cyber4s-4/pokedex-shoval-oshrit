@@ -1,6 +1,6 @@
 # pokedex-shoval-oshrit
 
-This is our [link](https://pokedex-shoval.herokuapp.com/) to the website, click and enjoy :stuck_out_tongue_winking_eye:
+This is our [link](http://pokedex-shoval-oshrit.herokuapp.com/) to the website, click and enjoy :stuck_out_tongue_winking_eye:
 
 ## About the project
 This project is pokedex website that rendering a lot of types of Pokemons and their attributes (id, name, image , abilities, types, weight and height ).
